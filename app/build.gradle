@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.babyprotect.app'
     compileSdk 34
 
     defaultConfig {
