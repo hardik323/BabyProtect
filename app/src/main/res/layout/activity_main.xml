@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👶 Baby Protect"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#E65100"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protect your baby's eyes and ears"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Status Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/statusIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔓"
+                android:textSize="48sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNLOCKED"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <!-- Lock / Unlock Buttons -->
+        <Button
+            android:id="@+id/lockBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔒 LOCK NOW"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/unlockBtn"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔓 UNLOCK (Password Required)"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Settings Card -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Lock Settings"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/brightnessInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="☀️ Brightness lock: 20%"
+                    android:textSize="15sp"
+                    android:textColor="#333333"/>
+
+                <Button
+                    android:id="@+id/setBrightnessBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Change"
+                    android:textSize="12sp"
+                    android:backgroundTint="#FF9800"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/volumeInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🔊 Volume lock: 10%"
+                    android:textSize="15sp"
+                    android:textColor="#333333"/>
+
+                <Button
+                    android:id="@+id/setVolumeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="Change"
+                    android:textSize="12sp"
+                    android:backgroundTint="#FF9800"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Change Password -->
+        <Button
+            android:id="@+id/changePassBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🔑 Change Password"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#607D8B"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Info box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_background"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ℹ️ How it works"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Lock enforces brightness &amp; volume every 2 seconds\n• Lock survives phone restarts\n• If app is uninstalled, lock is automatically released\n• Password required to unlock or change settings"
+                android:textSize="13sp"
+                android:textColor="#1565C0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
